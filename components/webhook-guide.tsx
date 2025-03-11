@@ -57,7 +57,7 @@ export function WebhookGuide() {
           </CardHeader>
           <CardContent className="space-y-4">
             <p>
-            We recommend utilizing the "Transaction" webhook for testing a simple interaction between DPP and your environment.
+            We recommend utilizing the Transaction webhook for testing a simple interaction between DPP and your environment.
             </p>
 
             <p>
