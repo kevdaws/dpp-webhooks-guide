@@ -28,13 +28,14 @@ export function Steps() {
             </CardHeader>
             <CardContent className="p-4 pt-0">
               <ul className="list-disc pl-5 space-y-1 text-sm">
-                <li>Merchant Boarded</li>
-                <li>Merchant Updated</li>
-                <li>CC Batch</li>
-                <li>ACH Batch</li>
-                <li>ACH Reject</li>
-                <li>Payment Processed</li>
-                <li>CC Chargeback</li>
+                <li>Merchant Boarded: Contains relevant information for new merchant, triggered when merchant is boarded into DPP.</li>
+                <li>Merchant Updated: Contains information regarding change(s) to a merchant account, triggered when change is made in DPP.</li>
+                <li>CC Batch: Summary of credit card batch, triggered at batch close.</li>
+                <li>ACH Batch: Summary of ACH batch, triggered at batch close.</li>
+                <li>ACH Reject: ACH transaction reject notification, triggered when reject is received.</li>
+                <li>Transaction: Transaction webhook with full details, triggered when transaction is processed.</li>
+                <li>Vault: Contains information related to a customer vault record, triggered when vault is created or updated</li>
+                <li>CC Chargeback: Contains information regarding credit card chargeback, triggered when chargeback is received.</li>
               </ul>
             </CardContent>
           </Card>

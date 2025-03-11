@@ -147,6 +147,9 @@ export function WebhookEventSelector() {
         }
     ]
 },
+  "Vault": {
+
+  },
   "CC Chargeback": {
   
   }
@@ -155,13 +158,14 @@ export function WebhookEventSelector() {
   return (
     <div className="space-y-4">
       <Tabs onValueChange={setSelectedEvent}>
-        <TabsList className="grid grid-cols-2 md:grid-cols-7 w-full">
+        <TabsList className="grid grid-cols-2 md:grid-cols-8 w-full">
           <TabsTrigger value="Merchant Boarded">Merchant Boarded</TabsTrigger>
           <TabsTrigger value="Merchant Updated">Merchant Updated</TabsTrigger>
           <TabsTrigger value="CC Batch">CC Batch</TabsTrigger>
           <TabsTrigger value="ACH Batch">ACH Batch</TabsTrigger>
           <TabsTrigger value="ACH Reject">ACH Reject</TabsTrigger>
           <TabsTrigger value="Transaction">Transaction</TabsTrigger>
+          <TabsTrigger value="Vault">Vault</TabsTrigger>
           <TabsTrigger value="CC Chargeback">CC Chargeback</TabsTrigger>
         </TabsList>
       </Tabs>
