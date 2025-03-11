@@ -1,6 +1,5 @@
 "use client"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { InfoIcon } from "lucide-react"
 import { Steps } from "@/components/steps"
 import { WebhookEventSelector } from "@/components/webhook-event-selector"
 
